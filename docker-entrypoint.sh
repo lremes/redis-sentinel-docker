@@ -45,6 +45,11 @@ print_master () {
     echo "sentinel monitor $MASTER_NAME ${ADDR[0]} ${ADDR[1]} $QUORUM" >> $SENTINEL_CONFIGURATION_FILE
 }
 
+
+if [ "$BIND_ADDRESS" ]; then
+    echo "bind $BIND_ADDRESS" >> $SENTINEL_CONFIGURATION_FILE
+fi
+
 echo "port $SENTINEL_PORT" > $SENTINEL_CONFIGURATION_FILE
 
 if [ "$ANNOUNCE_IP" ]; then

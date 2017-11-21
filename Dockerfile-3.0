@@ -1,5 +1,5 @@
 FROM redis:3.0.7-alpine
-MAINTAINER Ján Koščo (@s7anley)
+MAINTAINER Lars Remes
 
 RUN apk add --no-cache \
         curl \

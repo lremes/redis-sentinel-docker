@@ -49,6 +49,8 @@ Amazon EC2 Container Service currently doesn't support `host` network setting, t
 
 Environment Variables
 ---
+`BIND_ADDRESS` - Address to bind to. By default, sentinel will only be accessible from localhost.
+
 `MASTER` - Colon-separated IP address and port or Redis master. Port is optional, `REDIS_PORT` is used when missing. E.g. `ip_address` or `ip_address:port`.
 
 `REDIS_PORT` - Port on which is master available. Default value is `6379`.
