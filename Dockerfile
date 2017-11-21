@@ -1,5 +1,5 @@
 FROM redis:4.0.2-alpine
-MAINTAINER Ján Koščo (@s7anley)
+MAINTAINER Lars Remes (larsremes)
 
 RUN apk add --no-cache \
         curl \
